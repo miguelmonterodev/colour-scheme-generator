@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0.5rem;
+}
+
+select {
+    padding: 5px;
+    
+}
+
+#color-scheme {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 0.5px solid #555;
+    border-radius: 10px;
+}
+
+.column {
+    
+}
+
+.color-box {
+    width: 100%;
+    height: 80vh;
+    background-color: aqua;
+}
+
+#hex-value {
+    text-align: center;
+}
+
+
+@media(min-width: 600px) {
+    header {
+        justify-content: center;
+        gap: 50px;
+    }
+}
