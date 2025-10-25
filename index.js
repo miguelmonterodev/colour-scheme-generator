@@ -9,7 +9,7 @@ function renderJsonData(url) {
             colorSchemeEl.innerHTML += `
                     <div class="column">
                         <div id="${colorUnit.hex.value}" class="color-box"></div>
-                        <p id="hex-value">${colorUnit.hex.value}</p>
+                        <p class="hex-value">${colorUnit.hex.value}</p>
                     </div>
                     `
             document.getElementById(`${colorUnit.hex.value}`).style.backgroundColor = `${colorUnit.hex.value}`
@@ -24,7 +24,13 @@ document.getElementById('request-btn').addEventListener('click', () => {
     const colorMode = document.getElementById('color-mode').value
     url += `hex=${color}&mode=${colorMode}`
     colorSchemeEl.innerHTML = ""
-    renderJsonData(url)
-                
+    renderJsonData(url)                
 })
+
+// Copy the text inside the text field
+
+// navigator.clipboard.writeText(copyText.value);
+
+//   // Alert the copied text
+//   alert("Copied the text: " + copyText.value);
 

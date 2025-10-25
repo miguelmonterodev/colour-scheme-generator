@@ -31,7 +31,7 @@ select {
     background-color: aqua;
 }
 
-#hex-value {
+.hex-value {
     text-align: center;
 }
 
